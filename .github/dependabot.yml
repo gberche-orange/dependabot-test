@@ -21,7 +21,11 @@ updates:
 
 # Dep is undocumented in github integration at https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates#package-ecosystem
 # but historically supported in dependabot-core at https://github.com/dependabot/dependabot-core/tree/main/dep/spec/dependabot/dep
-  - package-ecosystem: "dep"
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
+# Enabling it fails with message:
+#  Dependabot encountered the following error when parsing your .github/dependabot.yml:
+#  The property '#/updates/2/package-ecosystem' value "dep" did not match one of the following values: npm, bundler, composer, maven, mix, cargo, gradle, nuget, gomod, docker, elm, gitsubmodule, github-actions, pip, terraform
+#
+#  - package-ecosystem: "dep"
+#    directory: "/" # Location of package manifests
+#    schedule:
+#      interval: "daily"
