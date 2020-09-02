@@ -3,10 +3,12 @@
 # Please see the documentation for all configuration options:
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
+# To retrigger a rescan before the configured interval, you may touch this file, or hit the "check for update"
+# in github UI on the last dependabot log screen
 
 version: 2
 updates:
   - package-ecosystem: "gomod" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily" # touch this file to trigger a rescan before the configured interval. UI does not seem to accept "scan now" request
+      interval: "daily"
