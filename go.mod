@@ -3,7 +3,9 @@ module github.com/orange-cloudfoundry/dependabot-test
 go 1.14
 
 require (
+		//we got a PR for this older version
 	github.com/cloudfoundry-incubator/bosh-backup-and-restore v1.7.0
+	    //we expect a pr for 1.2.0
 	github.com/thomasmitchell/bosh-complete v1.1.0
 
 	//surprisingly fails with:
