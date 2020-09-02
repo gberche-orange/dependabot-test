@@ -13,6 +13,7 @@ require (
     ///go.mod:8: require github.com/cloudfoundry/bosh-cli: version "v6.2.1" invalid: should be v0 or v1, not v6
 	//github.com/cloudfoundry/bosh-cli v6.2.1
 
+	github.com/stedolan/jq v0.0.0-yyyymmddhhmmss-abcdefabcdef
 
 	// failed attempt with jq which does not use semver tags and does not start with v
 	//github.com/stedolan/jq jq-1.6
