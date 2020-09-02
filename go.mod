@@ -15,7 +15,12 @@ require (
 
 	//this is the commit for release 1.5
 	// see https://github.com/stedolan/jq/commit/a5b5cbefb83935ce95ec62b9cadc8ec73026d33a
-	github.com/stedolan/jq v0.0.0-20150818062500-a5b5cbefb83935ce95ec62b9cadc8ec73026d33a
+	github.com/stedolan/jq v0.0.0-20150818062500-a5b5cbefb839
+
+	//github.com/stedolan/jq v0.0.0-20150818062500-a5b5cbefb83935ce95ec62b9cadc8ec73026d33a
+	//fails with
+	//go: github.com/stedolan/jq@v0.0.0-20150818062500-a5b5cbefb83935ce95ec62b9cadc8ec73026d33a: invalid pseudo-version: revision is longer than canonical (a5b5cbefb839)
+
 	// failed attempt with jq which does not use semver tags and does not start with v
 	//github.com/stedolan/jq jq-1.6
 	//fails with:
