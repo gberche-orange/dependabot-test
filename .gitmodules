@@ -1,0 +1,3 @@
+[submodule "cf-mysql-deployment"]
+	path = cf-mysql-deployment
+	url = https://github.com/cloudfoundry/cf-mysql-deployment/
