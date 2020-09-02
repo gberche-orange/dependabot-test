@@ -18,3 +18,10 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+
+# Dep is undocumented in github integration at https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates#package-ecosystem
+# but historically supported in dependabot-core at https://github.com/dependabot/dependabot-core/tree/main/dep/spec/dependabot/dep
+  - package-ecosystem: "dep"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
