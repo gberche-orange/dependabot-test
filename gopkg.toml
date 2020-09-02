@@ -1,0 +1,31 @@
+# dep might be more flexible than gomod for accepted versions format
+# however toml syntax is harder to parse
+
+required = [
+ "github.com/cloudfoundry/bosh-cli",
+ "github.com/stedolan/jq"
+]
+
+
+[[constraint]]
+  name = "github.com/cloudfoundry/bosh-cli"
+  version = "v6.2.1"
+
+[[constraint]]
+  name = "github.com/stedolan/jq"
+  version = "jq-1.6"
+
+
+# Also supports revisions and branches
+# See
+# # The collation tables must never change.
+# [[constraint]]
+#   name = "golang.org/x/text"
+#   revision = "470f45bf29f4147d6fbd7dfd0a02a848e49f5bf4"
+#
+# # https://github.com/coreos/etcd/commit/f03ed33
+# #
+# # https://github.com/coreos/etcd/commit/ce0ad377
+# [[constraint]]
+#   name = "github.com/coreos/etcd"
+#   branch = "master"
